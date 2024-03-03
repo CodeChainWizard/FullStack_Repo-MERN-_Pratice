@@ -1,0 +1,8 @@
+.h1_hello {
+  background-color: black;
+  border-radius: 100px;
+  margin-left: 10px;
+  text-align: center;
+  padding: 10px;
+  border: 10px solid yellow;
+}
