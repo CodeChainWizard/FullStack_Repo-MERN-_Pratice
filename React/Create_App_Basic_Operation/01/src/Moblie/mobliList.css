@@ -1,0 +1,13 @@
+.main_body {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.product_img {
+  flex: 0 0 100px;
+  margin-right: 20px;
+  display: block;
+  max-width: 100px;
+}
