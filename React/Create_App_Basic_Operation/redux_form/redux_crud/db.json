@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    },
+    {
+      "id": 3,
+      "title": "Welcome to the Blockchainwizard world",
+      "author": "CodeChainWizard"
+    },
+    {
+      "id": 4,
+      "title": "Welcome to the World",
+      "author": "CodeChainWizard"
+    },
+    {
+      "title": "Hello, World",
+      "author": "CodeChainWizard (Shubham)",
+      "id": "5"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

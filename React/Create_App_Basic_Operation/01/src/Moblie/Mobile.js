@@ -1,5 +1,6 @@
 import React from "react";
 import MoblieList from "./MoblieList";
+import list from "../list.json";
 
 const Mobile = () => {
   const product3 = {
@@ -30,6 +31,10 @@ const Mobile = () => {
         title={product3.title}
         price={product3.price}
       />
+      {list.map((e) => (
+        <MoblieList image_path={e.image} title={e.name} price={e.price} />
+      ))}
+      ;
     </div>
   );
 };
