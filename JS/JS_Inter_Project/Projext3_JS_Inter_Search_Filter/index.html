@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Filter</title>
+  </head>
+  <body>
+    <div class="filter-container">
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search.." />
+        <button id="search-btn">Search</button>
+      </div>
+      <div class="category-container">
+        <div class="category-btn" data-category="all">All Product</div>
+        <div class="category-btn" data-category="electronics">Electronics</div>
+        <div class="category-btn" data-category="clothing">Clothing</div>
+        <div class="category-btn" data-category="blender">Home and Graden</div>
+      </div>
+    </div>
+
+    <div id="product-list">
+      <div class="product-item" data-category="electronics">
+        <h3>Smart Phone</h3>
+        <p>Description of smartphone</p>
+      </div>
+
+      <div class="product-item" data-category="clothing">
+        <h3>Clothing</h3>
+        <p>Description of Clothing</p>
+      </div>
+
+      <div class="product-item" data-category="coffee">
+        <h3>Coffee Maker</h3>
+        <p>Description of Coffee Maker</p>
+      </div>
+
+      <div class="product-item" data-category="laptop">
+        <h3>Laptop</h3>
+        <p>Description of Laptop</p>
+      </div>
+
+      <div class="product-item" data-category="blender">
+        <h3>Blender</h3>
+        <p>Description of Blender</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
