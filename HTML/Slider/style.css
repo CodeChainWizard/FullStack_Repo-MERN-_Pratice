@@ -1,0 +1,99 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    124deg,
+    /* rgba(34, 193, 195, 1) 0%, */ /* rgba(45, 94, 253, 1) 100% */
+  );
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
+
+.slider {
+  position: relative;
+  max-width: 900px;
+  padding: 0 15px;
+  margin: 30px auto;
+}
+
+.slider-list {
+  display: flex;
+  padding: 0;
+  border: 5px solid #ffffff;
+  margin: 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+.slider-item {
+  opacity: 0;
+  width: 0%;
+  flex-shrink: 0;
+  z-index: 1;
+  transition: opacity 1s;
+}
+
+#slider-control-1:checked ~ .slider-list .slider-item:nth-child(1),
+#slider-control-2:checked ~ .slider-list .slider-item:nth-child(2),
+#slider-control-3:checked ~ .slider-list .slider-item:nth-child(3),
+#slider-control-4:checked ~ .slider-list .slider-item:nth-child(4),
+#slider-control-5:checked ~ .slider-list .slider-item:nth-child(5) {
+  opacity: 100;
+  width: 100%;
+  transition: opacity 0.5s;
+}
+
+.slider-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  z-index: 999;
+}
+
+.slider-controls label {
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 0;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.slider-controls label:hover,
+#slider-control-1:checked ~ .slider-controls label:nth-child(1),
+#slider-control-2:checked ~ .slider-controls label:nth-child(2),
+#slider-control-3:checked ~ .slider-controls label:nth-child(3),
+#slider-control-4:checked ~ .slider-controls label:nth-child(4),
+#slider-control-5:checked ~ .slider-controls label:nth-child(5) {
+  background-color: #ffffff;
+}
